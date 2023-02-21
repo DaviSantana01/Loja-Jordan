@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family= Montserrat :wght@500 & display=swap');
+:root{
+    ---font: 'Montserrat', sans-serif;
+}
+
+.largura{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cabecalho div{
+    text-align: center;
+    padding: 0.8%;
+    font-family: var(---font);
+}
+
+.cabecalho div:nth-child(1){
+    background: #181818;
+    color: #fff;
+}
+
+.cabecalho div:nth-child(2){
+    font-size: 1.3rem;
+}
+
+@media(max-width:700px){
+    .cabecalho div{
+        padding: 3%;
+    }
+}
+
+
+
+/*Banner*/
+
+.banner{
+    background-image: url(../img/banner.jpg) ;
+    height: 45vh;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.banner article{
+    font-family: var(---font);
+    padding-left: 2%;
+    width: 45%;
+    margin-left: 0;
+}
+
+.banner article h2{
+    color: #fff;
+    font-size: 2rem;
+    padding-top: 5%;
+    font-weight: 600;
+    padding-top: 15%;
+}
+
+.banner article p{
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 3%;
+    line-height: 26px;
+}
+@media(max-width:700px){
+    .banner article h2{
+        font-size: 1.6rem;
+    }
+    .banner article{
+        width: 100%;
+    }
+    .banner{
+        padding: 2%;
+    }
+
+}
+/*Catalogo*/
+
+.catalogoText{
+    text-align: center;
+    font-family: var(---font);
+}
+
+@media(max-width:700px){
+    .catalogoText{
+        padding: 5%;
+    }
+    .catalogoText p{
+        line-height: 28px;
+    }
+}
+
+.catalogoText h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 5%;
+}
+
+.catalogoText p{
+    margin: 3% 0 5% 0;
+}
+
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-self: center;
+    gap: 10px;
+}
+
+.catalogo div{
+    background-color: #EBE9EA;
+    padding: 10% 0% 10% 0%;
+}
+
+@media(max-width:700px){
+    .catalogo{
+        grid-template-columns: repeat(1,1fr);
+        padding: 2%;
+    }
+    .catalogo div{
+        padding: 10%;
+    }
+}
